@@ -10,7 +10,7 @@ const mockData = [
 
 const useDebounce = () => {
     const [query, setQuery] = useState('');
-    const timer = useRef<any | null>(null);
+    const timer = useRef<number | null>(null);
 
     const data = mockData.filter((item) => item.name.toLowerCase().includes(query.toLowerCase()))
 
