@@ -5,7 +5,8 @@ import LoginForm from './pages/LoginForm';
 import Counter from './pages/Counter3';
 import SignInForm from './pages/SignIn';
 import DebouncedSearch from './pages/DebouncedFilter';
-import PhoneInput from './pages/InputPhone';
+import GithubProfile from './pages/GithubProfile';
+import TodoList from './pages/TodoList3';
 
 const router = createBrowserRouter([
   {
@@ -33,9 +34,15 @@ const router = createBrowserRouter([
     ) 
   },
   {
-    path: '/inputPhone',
+    path: '/commits',
     element: (
-      <PhoneInput />
+      <GithubProfile />
+    ) 
+  },
+  {
+    path: '/todo',
+    element: (
+      <TodoList />
     ) 
   },
 ]);
