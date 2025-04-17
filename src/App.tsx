@@ -6,7 +6,8 @@ import Counter from './pages/Counter3';
 import SignInForm from './pages/SignIn';
 import DebouncedSearch from './pages/DebouncedFilter';
 import GithubProfile from './pages/GithubProfile';
-import TodoList from './pages/TodoList3';
+import Gallery from './pages/Gallery';
+import MedialabInterview from './pages/MedialabInterview';
 
 const router = createBrowserRouter([
   {
@@ -40,9 +41,15 @@ const router = createBrowserRouter([
     ) 
   },
   {
-    path: '/todo',
+    path: '/gallery',
     element: (
-      <TodoList />
+      <Gallery />
+    ) 
+  },
+  {
+    path: '/interview',
+    element: (
+      <MedialabInterview />
     ) 
   },
 ]);

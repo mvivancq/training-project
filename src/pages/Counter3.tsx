@@ -17,7 +17,7 @@ const CountDown: React.FC = () => {
         }, 1000)
     }
 
-    const validateCount = (e) => {
+    const validateCount = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = parseInt(e.target.value, 10);
         if(value >= 0 && value <= 100){
             setError(false);
