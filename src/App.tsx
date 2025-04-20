@@ -7,7 +7,7 @@ import SignInForm from './pages/SignIn';
 import DebouncedSearch from './pages/DebouncedFilter';
 import GithubProfile from './pages/GithubProfile';
 import Gallery from './pages/Gallery';
-import MedialabInterview from './pages/MedialabInterview';
+import SquareSet from './pages/SquareSet';
 
 const router = createBrowserRouter([
   {
@@ -49,7 +49,7 @@ const router = createBrowserRouter([
   {
     path: '/interview',
     element: (
-      <MedialabInterview />
+      <SquareSet />
     ) 
   },
 ]);
